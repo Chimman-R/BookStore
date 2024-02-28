@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.com">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
+<title>Register Now</title>
+</head>
+<body>
+
+	<ul class="nav justify-content-center bg-secondary">
+		<li class="nav-item"><a class="nav-link active text-white"
+			aria-current="page" href="book_shelf">BOOKSHELF</a></li>
+		<li class="nav-item"><a class="nav-link text-white" href="/">HOME</a>
+		</li>
+		<li class="nav-item"><a class="nav-link text-white"
+			href="available_books">AVAILABE BOOKS</a></li>
+		<li class="nav-item"><a class="nav-link text-white" href="services">SERVICES</a>
+		</li>
+		<li class="nav-item"><a
+			class="nav-link text-white text- pull-right" href="register_now">REGISTER
+				NOW</a></li>
+	</ul>
+	<h2 class="text-center my-2">Find Your Book Here!</h2>
+	<div class="container my-3 p-3" style="border:1px solid black;">
+	<div>
+		<form class="col -md-4 offset-md-4" th:action="@{/save}" method="post">
+			<div class="mb-3">
+				<label for="book_name" class="form-label">Book Name
+					</label> <input type="text" class="form-control" name="name">
+			</div>
+			<div class="mb-3">
+				<label for="author_name" class="form-label">Author Name
+					</label> <input type="text" class="form-control" name="author">
+			</div>
+			<div class="mb-3">
+				<label for="price" class="form-label">Price
+					</label> <input type="text" class="form-control" name="price">
+			</div>
+			<center><button type="submit" class="btn btn-primary">Submit</button></center>
+		</form>
+	</div>
+</div>
+
+
+
+
+
+
+
+</body>
